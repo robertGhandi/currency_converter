@@ -1,0 +1,17 @@
+2025-04-07T14:31:19.379Z [INFO]: User sign-in attempt {"email":"robertzerah@gmail.com"}
+2025-04-07T14:31:23.631Z [INFO]: User signed in successfully {"email":"robertzerah@gmail.com"}
+2025-04-07T14:32:24.105Z [INFO]: User authenticated successfully {"userId":"041f02a8-a318-405b-9d18-f2d718401878","email":"robertzerah@gmail.com","ip":"::ffff:127.0.0.1"}
+2025-04-07T14:32:28.213Z [INFO]: Currency conversion successful {"base":"USD","target":"CAD","amount":1000}
+2025-04-07T14:32:55.111Z [INFO]: User authenticated successfully {"userId":"041f02a8-a318-405b-9d18-f2d718401878","email":"robertzerah@gmail.com","ip":"::ffff:127.0.0.1"}
+2025-04-07T14:32:55.956Z [INFO]: Currency conversion successful {"base":"USD","target":"NGN","amount":1000}
+2025-04-07T14:33:10.151Z [INFO]: User authenticated successfully {"userId":"041f02a8-a318-405b-9d18-f2d718401878","email":"robertzerah@gmail.com","ip":"::ffff:127.0.0.1"}
+2025-04-07T14:33:12.533Z [INFO]: Currency conversion successful {"base":"USD","target":"NGN","amount":1}
+2025-04-07T14:34:05.177Z [WARN]: Unauthorized access attempt - invalid token 
+2025-04-07T14:34:26.680Z [INFO]: User authenticated successfully {"userId":"041f02a8-a318-405b-9d18-f2d718401878","email":"robertzerah@gmail.com","ip":"::ffff:127.0.0.1"}
+2025-04-07T14:35:03.071Z [INFO]: User authenticated successfully {"userId":"041f02a8-a318-405b-9d18-f2d718401878","email":"robertzerah@gmail.com","ip":"::ffff:127.0.0.1"}
+2025-04-07T14:35:07.627Z [INFO]: Historical exchange rate fetched successfully {"base":"USD","target":"NGN"}
+2025-04-07T15:19:36.693Z [INFO]: User sign-in attempt {"email":"user@example.com"}
+2025-04-07T15:19:40.379Z [WARN]: Sign-in error {"email":"user@example.com","error":"Invalid login credentials"}
+2025-04-09T14:08:17.021Z [INFO]: Incoming Request {"requestId":"9cc333a0-780f-4c41-822c-bc36ddf3457d","method":"POST","path":"/api/v1/auth/signin","ip":"::ffff:127.0.0.1","userAgent":"Thunder Client (https://www.thunderclient.com)"}
+2025-04-09T14:08:17.067Z [INFO]: User sign-in attempt {"email":"robertzerah@gmail.com"}
+2025-04-09T14:08:22.506Z [INFO]: User signed in successfully {"email":"robertzerah@gmail.com"}
