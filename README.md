@@ -37,13 +37,16 @@ The Currency Conversion API is a RESTful service that provides real-time and his
   |   |
   │   ├── /middleware
   │   │   ├── authenticateSupabase.js
-  │   │
+  │   │   ├── rateLimiter.js
+  |   |
   │   ├── /docs
   │   │   ├── swaggerDocs.js
   │   │
   │   ├── /utils
   │   │   ├── logger.js
-  │   │
+  │   │   ├── currencyCodes.js
+  |   |   ├── currencyName.js
+  |   |
   │   ├── /routes
   │   │   ├── authRoutes.js
   │   │   ├── currency.route.js
@@ -59,15 +62,19 @@ The Currency Conversion API is a RESTful service that provides real-time and his
   │   │   ├── convertCurrency.test.js
   │   │   ├── currentCurrency.test.js
   │   │   ├── historicalExchangeRate.test.js
-  │
+  |   |
+  │   ├── index.js
+  |   |
   ├── /prisma                # Prisma migrations and schema
   ├── /logs
   │   ├── app.log            # Log file
-  │
+  │   ├── error.log
+  ├── .env
   ├── .gitignore
   ├── package.json
   ├── package-lock.json
-  ├── README.md
+  ├── README.
+  ├── vercel.json
 
 ```
 
@@ -80,8 +87,8 @@ The Currency Conversion API is a RESTful service that provides real-time and his
 ### Steps
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/currency-conversion-api.git
-   cd currency-conversion-api
+   git clone https://github.com/robertGhandi/currency_converter.git
+   cd currency_conversion
    ```
 
 2. **Install dependencies**
