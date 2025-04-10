@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "npx prisma generate",
+    "postinstall": "prisma generate",
     "start": "node src/index.js",
     "test": "vitest"
   },
