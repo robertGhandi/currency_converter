@@ -138,10 +138,17 @@ const resendVerificationEmail = async (req, res) => {
 
 const emailVerificationRedirect = (req, res) => {
 	logger.info("Email verified successfully")
-    return res.status(200).json({
-		status: "success",
-		message: "Email verified successfully. You can now log in.",
-	});
+    return res.status(200).send(`
+        <html>
+        <head>
+            <title>Email Verified</title>
+        </head>
+        <body style="text-align: center; padding: 50px;">
+            <h1>Email Verified Successfully</h1>
+            <p>You can now close this window and log in.</p>
+        </body>
+        </html>
+        `)
 };
 
 export { signUp, signIn, resendVerificationEmail, emailVerificationRedirect };
