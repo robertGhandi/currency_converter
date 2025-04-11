@@ -1,4 +1,5 @@
 import rateLimit from "express-rate-limit";
+import logger from '../utils/logger.js';
 
 const apiRateLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -9,6 +10,14 @@ const apiRateLimiter = rateLimit({
         status: "error",
         message: "Too many requests, please try again later.",
     },
+
+    handler: (req, res, next, options) => {
+        logger.warn("Rate limit exceeded", { ip: req.ip, method: req.method, path: req.path });
+        res.status(options.statusCode).json({
+            status: "error",
+            message: options.message,
+        });
+    }
 });
 
 export default apiRateLimiter;
