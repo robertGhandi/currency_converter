@@ -4,11 +4,11 @@
 The Currency Conversion API is a RESTful service that provides real-time and historical exchange rates, batch currency conversion, and user-specific favorite currency pairs. Built with **Express.js**, **PostgreSQL**, and **Prisma ORM**, it integrates with an external currency beacon service for accurate exchange rates.
 
 ## Features
-- **Real-time currency conversion**
-- **Historical exchange rate lookup**
+- **Real-time currency conversion: Convert currencies instantly based on current rates**
+- **Historical exchange rate lookup: Access historical exchange rates for any given period**
 - **Batch currency conversion**
-- **Favorite currency pair management**
-- **Authentication using Supabase**
+- **Favorite currency pair management: Users can save and retrieve their most used currency pairs**
+- **Authentication: Secure user authentication with Supabase**
 - **Swagger API documentation**
 - **Logging with Winston**
 - **Comprehensive unit tests using vitest and supertest**
@@ -19,7 +19,7 @@ The Currency Conversion API is a RESTful service that provides real-time and his
 - **ORM:** Prisma
 - **Authentication:** Supabase
 - **API Documentation:** Swagger
-- **Testing Framework:** vitest
+- **Testing Framework:** Vitest, Supertest
 - **Logging:** Winston
 
 ## Project Structure
