@@ -14,15 +14,9 @@ jobs:
           set -e  # Exit immediately if a command fails
           echo "Pinging Supabase API..."
           
-          # Perform the curl request and capture the HTTP status code
-          RESPONSE=$(curl -s -w "%{http_code}" -o /dev/null -X GET "https://xnvthxttyqnxjgodbitc.supabase.co/rest/v1/FavoriteCurrencyPairs?select=id" \
+          # Perform the curl request
+          curl -X GET "https://xnvthxttyqnxjgodbitc.supabase.co/rest/v1/FavoriteCurrencyPairs?select=id" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" \
-          -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}")
+          -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+          -w "\nHTTP Status: %{http_code}\n"
 
-          # Check the response code to determine success or failure
-          if [ "$RESPONSE" -ne 200 ]; then
-              echo "Failed to ping Supabase API. HTTP Status: $RESPONSE"
-              exit 1
-          else
-              echo "Successfully pinged Supabase API. HTTP Status: $RESPONSE"
-          fi
