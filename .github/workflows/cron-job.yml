@@ -16,7 +16,7 @@ jobs:
           
           # Perform the curl request
           curl -X GET "https://xnvthxttyqnxjgodbitc.supabase.co/rest/v1/FavoriteCurrencyPairs?select=id" \
-        
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" \
           -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
           -w "\nHTTP Status: %{http_code}\n"
 
